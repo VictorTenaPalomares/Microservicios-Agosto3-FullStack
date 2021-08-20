@@ -1,7 +1,5 @@
 package com.formacionviewnext.microservicios.app.usuarios.services;
 
-import java.util.List;
-
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.commons.services.CommonService;
 
@@ -9,7 +7,7 @@ import com.formacionviewnext.microservicios.commons.services.CommonService;
 
 public interface AlumnoService extends CommonService<Alumno>{
 
-	public List<Alumno> findByNombreOrApellido(String term);
+	
 	
 	
 }

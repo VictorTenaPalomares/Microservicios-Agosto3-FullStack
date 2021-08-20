@@ -4774,3 +4774,537 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY Activator 1 0 2021-08-20 13:31:25.173
 !MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.095
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.096
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.096
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.097
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.097
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.098
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.098
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.605
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.608
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.668
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.669
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.671
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.671
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 13:54:46.683
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY CSP 2 0 2021-08-20 13:56:06.719
+!MESSAGE Timeout getting method completions for sorter. QualifiedClassName = com.formacionviewnext.microservicios.app.usuarios.models.repository.AlumnoRepository
+!STACK 0
+com.codota.common.completion.QueryTimeoutException
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:97)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletions(CompletionGetterHelper.java:118)
+	at com.codota.common.completion.MethodCompletionGetter.getCompletions(MethodCompletionGetter.java:36)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.getMethodCompletions(MethodCompletionsListener.java:312)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.assistSessionStarted(MethodCompletionsListener.java:241)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.lambda$10(ContentAssistant.java:2439)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4872)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2436)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1858)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:369)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:88)
+	... 34 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-20 13:56:07.376
+!MESSAGE Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+
+!ENTRY CSP 2 0 2021-08-20 13:59:10.631
+!MESSAGE Problem getting expression completion focal java element. Expected 1 java element but found: 0
+
+!ENTRY CSP 2 0 2021-08-20 14:07:19.715
+!MESSAGE Timeout getting method completions for sorter. QualifiedClassName = com.formacionviewnext.microservicios.app.usuarios.services.AlumnoService
+!STACK 0
+com.codota.common.completion.QueryTimeoutException
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:97)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletions(CompletionGetterHelper.java:118)
+	at com.codota.common.completion.MethodCompletionGetter.getCompletions(MethodCompletionGetter.java:36)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.getMethodCompletions(MethodCompletionsListener.java:312)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.assistSessionStarted(MethodCompletionsListener.java:241)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.lambda$10(ContentAssistant.java:2439)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4872)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2436)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1858)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:369)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:88)
+	... 34 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-20 14:07:20.226
+!MESSAGE Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.761
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.761
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.761
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.762
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.762
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.763
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:32.763
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.271
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.272
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.326
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.327
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.328
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.329
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:08:33.341
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.229
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.230
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.230
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.231
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.231
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.232
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.232
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.739
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.740
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.792
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.792
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.795
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.795
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:11:37.804
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.251
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.252
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.252
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.253
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.253
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.253
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.254
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.766
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.809
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.812
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.870
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.871
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.874
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:16:18.885
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.127
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.127
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.127
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.128
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.128
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.129
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.129
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.706
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.707
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.708
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.752
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.764
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.764
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:29:31.777
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY CSP 2 0 2021-08-20 14:30:09.057
+!MESSAGE Timeout getting method completions for sorter. QualifiedClassName = com.formacionviewnext.microservicios.app.cursos.models.repository.CursoRepository
+!STACK 0
+com.codota.common.completion.QueryTimeoutException
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:97)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletions(CompletionGetterHelper.java:118)
+	at com.codota.common.completion.MethodCompletionGetter.getCompletions(MethodCompletionGetter.java:36)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.getMethodCompletions(MethodCompletionsListener.java:312)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.assistSessionStarted(MethodCompletionsListener.java:241)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.lambda$10(ContentAssistant.java:2439)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4872)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2436)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1858)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:369)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:88)
+	... 34 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-20 14:30:09.492
+!MESSAGE Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+
+!ENTRY CSP 2 0 2021-08-20 14:31:29.454
+!MESSAGE Problem getting expression completion focal java element. Expected 1 java element but found: 0
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.616
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.616
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.617
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.617
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.617
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.618
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:01.618
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.173
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.179
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.248
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.252
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.252
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.253
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:32:02.263
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY CSP 2 0 2021-08-20 14:38:43.880
+!MESSAGE Timeout getting method completions for sorter. QualifiedClassName = com.formacionviewnext.microservicios.app.cursos.services.CursoService
+!STACK 0
+com.codota.common.completion.QueryTimeoutException
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:97)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletions(CompletionGetterHelper.java:118)
+	at com.codota.common.completion.MethodCompletionGetter.getCompletions(MethodCompletionGetter.java:36)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.getMethodCompletions(MethodCompletionsListener.java:312)
+	at com.codota.eclipse.assistant.completion.method.MethodCompletionsListener.assistSessionStarted(MethodCompletionsListener.java:241)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.lambda$10(ContentAssistant.java:2439)
+	at java.base/java.util.Collections$SingletonSet.forEach(Collections.java:4872)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.fireSessionBeginEvent(ContentAssistant.java:2436)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.prepareToShowCompletions(ContentAssistant.java:1858)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:369)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
+	at com.codota.common.completion.CompletionGetterHelper.getCompletionsInner(CompletionGetterHelper.java:88)
+	... 34 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-08-20 14:38:44.347
+!MESSAGE Initiated a temporary lockdown because of exception: Too many requests to Sentry: https://docs.sentry.io/learn/quotas/
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.455
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.455
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.456
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.456
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.457
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.457
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:00.459
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.070
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.071
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.120
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.120
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.123
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.123
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:40:01.136
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.566
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.566
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.567
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.567
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.568
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.569
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:09.570
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.083
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.084
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.137
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.137
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.139
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MariaDB'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.140
+!MESSAGE Has main method computation for project 'microservicios-usuarios_MySQL'
+
+!ENTRY Activator 1 0 2021-08-20 14:48:10.152
+!MESSAGE Has main method computation for project 'microservicios-zuul'
