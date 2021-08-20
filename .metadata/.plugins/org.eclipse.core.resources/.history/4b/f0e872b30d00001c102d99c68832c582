@@ -1,0 +1,6 @@
+#Nombre del servidor eureka
+spring.application.name=microservicio-eureka-server
+#Puerto por defecto
+server.port=8761 
+#Para que no se registre a si mismo como cliente
+

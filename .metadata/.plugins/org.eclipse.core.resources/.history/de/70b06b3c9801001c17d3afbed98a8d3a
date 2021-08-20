@@ -1,0 +1,7 @@
+package com.formacionviewnext.microservicios.app.cursos.services;
+
+import com.formacionviewnext.microservicios.commons.services.CommonService;
+
+public class CursoServiceImpl implements CommonService<E> {
+
+}

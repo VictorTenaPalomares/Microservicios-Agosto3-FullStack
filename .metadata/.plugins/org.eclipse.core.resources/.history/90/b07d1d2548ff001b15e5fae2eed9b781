@@ -1,0 +1,7 @@
+package com.formacionviewnext.microservicios.app.usuarios.models.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface AlumnoRepository extends CrudRepository<T, ID> {
+
+}

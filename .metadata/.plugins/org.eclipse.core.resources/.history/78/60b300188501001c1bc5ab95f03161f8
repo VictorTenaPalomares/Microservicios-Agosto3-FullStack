@@ -1,0 +1,15 @@
+zuul.host.socket-timeout-millis=30000
+
+
+spring.application.name=microservicio-zuul
+server.port=8090
+
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+eureka.instance.hostname=localhost
+eureka.instance.non-secure-port-enabled=false
+eureka.instance.secure-port-enabled=true
+eureka.instance.secure-port=${server.port}
+
+zuul.routes.usuarios.service-id=microservicio-usuarios
+zuul.routes.usuarios.path=/api/alumnos/**

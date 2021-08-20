@@ -1,0 +1,5 @@
+package com.formacionviewnext.microservicios.app.cursos.controllers;
+
+public class CursoController {
+
+}

@@ -1,0 +1,5 @@
+package com.formacionviewnext.microservicios.app.cursos.models.repository;
+
+public interface CursoRepository {
+
+}

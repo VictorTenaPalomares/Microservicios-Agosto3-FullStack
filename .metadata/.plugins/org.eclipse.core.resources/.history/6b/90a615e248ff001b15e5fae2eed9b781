@@ -1,0 +1,12 @@
+package com.formacionviewnext.microservicios.app.usuarios.models.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.formacionviewnext.microservicios.app.usuarios.models.entity.Alumno;
+
+
+/*https://docs.spring.io/spring-data/jpa/docs/2.5.4/reference/html/#repositories*/
+
+public interface AlumnoRepository extends CrudRepository<Alumno, Long> {
+
+}

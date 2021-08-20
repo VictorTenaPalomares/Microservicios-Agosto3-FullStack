@@ -1,0 +1,13 @@
+package com.formacionviewnext.microservicios.app.zuul;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MicroserviciosZuulVictorApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MicroserviciosZuulVictorApplication.class, args);
+	}
+
+}
