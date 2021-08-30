@@ -81,7 +81,7 @@
 		<item key="OmitCallToSuper" value="false"/>
 	</section>
 	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
-		<item key="DIALOG_X_ORIGIN" value="630"/>
+		<item key="DIALOG_X_ORIGIN" value="290"/>
 		<item key="DIALOG_Y_ORIGIN" value="9"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="806"/>
@@ -91,7 +91,7 @@
 		<item key="showtypes" value="true"/>
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
-		<item key="DIALOG_X_ORIGIN" value="640"/>
+		<item key="DIALOG_X_ORIGIN" value="310"/>
 		<item key="DIALOG_Y_ORIGIN" value="84"/>
 		<item key="DIALOG_WIDTH" value="658"/>
 		<item key="DIALOG_HEIGHT" value="661"/>

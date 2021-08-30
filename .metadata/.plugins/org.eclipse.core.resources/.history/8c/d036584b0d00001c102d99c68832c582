@@ -1,4 +1,0 @@
-#Nombre del servidor eureka
-spring.application.name=microservicio-eureka-server
-#Puerto
-server.port=8761 

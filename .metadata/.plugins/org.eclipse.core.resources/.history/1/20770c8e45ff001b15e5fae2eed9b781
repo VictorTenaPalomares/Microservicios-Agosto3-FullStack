@@ -1,5 +1,0 @@
-package com.formacionviewnext.microservicios.app.usuarios.models.entity;
-
-public class Alumno {
-
-}

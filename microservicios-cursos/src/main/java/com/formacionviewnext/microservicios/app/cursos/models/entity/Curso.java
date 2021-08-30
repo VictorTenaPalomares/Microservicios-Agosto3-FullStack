@@ -10,6 +10,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
@@ -17,31 +18,36 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
+import com.formacionviewnext.microservicios.commons.examenes.models.entity.Examen;
 
 @Entity
-@Table(name="cursos")
+@Table(name = "cursos")
 public class Curso {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
-	private String nombre;	
-	
-	@Column(name="create_at")
+
+	private String nombre;
+
+	@Column(name = "create_at")
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createAt;
+
+	@OneToMany(fetch = FetchType.LAZY)
+	private List<Alumno> alumnos;
 	
-	@OneToMany(fetch=FetchType.LAZY)
-	private List<Alumno> alumnos ;
+	@ManyToMany(fetch = FetchType.LAZY)
+	private List<Examen> examenes;
 
 	public Curso() {
-		this.alumnos=new ArrayList<>();
+		this.alumnos = new ArrayList<>();
+		this.examenes = new ArrayList<>();
 	}
 
 	@PrePersist
 	public void prePersist() {
-		this.createAt=new Date(); 
+		this.createAt = new Date();
 	}
 
 	public Long getId() {
@@ -67,7 +73,7 @@ public class Curso {
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
 	}
-	
+
 	public List<Alumno> getAlumnos() {
 		return alumnos;
 	}
@@ -75,13 +81,29 @@ public class Curso {
 	public void setAlumnos(List<Alumno> alumnos) {
 		this.alumnos = alumnos;
 	}
-	
+
 	public void addAlumno(Alumno alumno) {
 		this.alumnos.add(alumno);
 	}
-	
+
 	public void removeAlumno(Alumno alumno) {
 		this.alumnos.remove(alumno);
+	}
+
+	public List<Examen> getExamenes() {
+		return examenes;
+	}
+
+	public void setExamenes(List<Examen> examenes) {
+		this.examenes = examenes;
+	}
+
+	public void addExamen(Examen examen) {
+		this.examenes.add(examen);
+	}
+
+	public void removeExamen(Examen examen) {
+		this.examenes.remove(examen);
 	}
 
 }

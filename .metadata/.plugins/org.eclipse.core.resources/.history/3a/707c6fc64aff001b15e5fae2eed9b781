@@ -1,5 +1,0 @@
-package com.formacionviewnext.microservicios.app.usuarios.services;
-
-public interface AlumnoService {
-
-}
