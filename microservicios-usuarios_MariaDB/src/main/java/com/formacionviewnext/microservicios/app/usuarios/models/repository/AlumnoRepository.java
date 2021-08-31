@@ -3,7 +3,7 @@ package com.formacionviewnext.microservicios.app.usuarios.models.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 
@@ -13,7 +13,7 @@ import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Al
  * nuestros propios métodos en caso de que noi¡ tengamos suficientes*/
 /*https://docs.spring.io/spring-data/jpa/docs/2.5.4/reference/html/#repositories*/
 
-public interface AlumnoRepository extends CrudRepository<Alumno, Long> {
+public interface AlumnoRepository extends PagingAndSortingRepository<Alumno, Long> {
 
 	// Método custom de acceso a datos que no viene en JPA
 	// Remarcar que esto es una consulta propia de JPA (HQL) y que difiere de sql

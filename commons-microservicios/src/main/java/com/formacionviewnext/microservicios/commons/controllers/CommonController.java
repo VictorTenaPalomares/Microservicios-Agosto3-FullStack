@@ -7,6 +7,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -29,6 +30,11 @@ public class CommonController<E,S extends CommonService<E>> {
 		 return ResponseEntity.ok().body(service.findAll());
 	}
 	
+	@GetMapping ("/pagina")
+	public ResponseEntity<?> listar(Pageable pageable){
+		 return ResponseEntity.ok().body(service.findAll(pageable));
+	}
+	
 	@GetMapping("/{id}") // Mientras se llamen igual los parámetros no hay que complicarse con atributos
 	public ResponseEntity<?> ver (@PathVariable Long id){
 		
@@ -38,7 +44,7 @@ public class CommonController<E,S extends CommonService<E>> {
 			return ResponseEntity.notFound().build(); 
 		}
 		// retorna el objeto Alumno con el código de estado 200
-		return ResponseEntity.ok().body(op.get()); 
+		return ResponseEntity.ok().body(op.get());
 	}
 	
 	@PostMapping // llamada al endpoint raiz del verbo post
