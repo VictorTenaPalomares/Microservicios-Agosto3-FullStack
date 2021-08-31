@@ -7,12 +7,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "alumnos")
@@ -21,6 +24,10 @@ public class Alumno {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Lob //permite persistir un objeto de tamaño grande-> Large Object
+	@JsonIgnore // para no mostrar esta información en el json
+	private byte[] foto;
 
 	@NotEmpty
 	private String nombre;
@@ -39,6 +46,20 @@ public class Alumno {
 	@PrePersist
 	public void prePersist() {
 		this.createAt = new Date();
+	}
+	
+	//Método para que retorne un identificador de la foto, será utilizado por Angular
+	public Integer getFotoHashCode() {
+		
+		// validamos para que, en caso de que foto sea null, no llegue a hashcode y nos lance una excepción
+		if (this.foto==null) {
+			return null;
+		}
+		
+		 return this.foto.hashCode(); //este método lo proporciona la clase Object, es un identificador que tienen todos los objetos java y que los hace únicos
+		 
+		 // forma de hacer lo mismo pero con el operador ternario
+		 //return(this.foto!=null)?this.foto.hashCode():null;
 	}
 
 	public Long getId() {
@@ -79,6 +100,14 @@ public class Alumno {
 
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
+	}
+	
+	public byte[] getFoto() {
+		return foto;
+	}
+
+	public void setFoto(byte[] foto) {
+		this.foto = foto;
 	}
 
 	@Override

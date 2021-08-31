@@ -26,8 +26,6 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 4108100447.index
 1661834357.index
 1874844061.index
-985118974.index
-1314780035.index
 2195571903.index
 2496508128.index
 799374148.index
@@ -141,7 +139,6 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 2346266758.index
 2398035023.index
 736823363.index
-4278537336.index
 1118762792.index
 3365178221.index
 3674712230.index
@@ -165,9 +162,7 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 4067519245.index
 2931931280.index
 94392195.index
-3773214236.index
 2473366323.index
-2051156570.index
 3141465911.index
 2678028646.index
 3839078958.index
@@ -234,7 +229,6 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 1415274867.index
 3305757599.index
 2449502610.index
-1297467471.index
 3397465934.index
 3076228429.index
 1627597163.index
@@ -265,7 +259,6 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 2402889184.index
 4033864358.index
 2648664578.index
-2825983193.index
 2185698128.index
 1377550297.index
 3006368076.index
@@ -361,7 +354,6 @@ INDEX VERSION 1.131+C:\Users\0018118\Desktop\Microservicios3_FullStack\.metadata
 1063583564.index
 3809079642.index
 4190783039.index
-910669418.index
 3103951557.index
 149226054.index
 3054885652.index
