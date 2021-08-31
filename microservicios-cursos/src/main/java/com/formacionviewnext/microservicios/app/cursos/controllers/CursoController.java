@@ -3,8 +3,11 @@ package com.formacionviewnext.microservicios.app.cursos.controllers;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -22,7 +25,13 @@ public class CursoController extends CommonController<Curso, CursoService> {
 
 	// En este método editamos un determinado curso
 	@PutMapping("/{id}")
-	public ResponseEntity<?> editar(@RequestBody Curso curso, @PathVariable Long id) {
+	public ResponseEntity<?> editar(@Valid @RequestBody Curso curso,BindingResult result, @PathVariable Long id) {
+		
+		//validamos antes de guardar, retornamos llamada al método
+				if(result.hasErrors()) {
+					return this.validar(result);
+				}
+		
 		Optional<Curso> o = this.service.findById(id);
 		if (!o.isPresent()) {
 			return ResponseEntity.notFound().build();

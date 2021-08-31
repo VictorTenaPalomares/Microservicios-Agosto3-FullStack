@@ -2,8 +2,11 @@ package com.formacionviewnext.microservicios.app.usuarios.controllers;
 
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -20,7 +23,12 @@ public class AlumnoController extends CommonController<Alumno, AlumnoService> {
 	
 	
 	@PutMapping("/{id}")
-	public ResponseEntity<?> editar(@RequestBody Alumno alumno,@PathVariable Long id){
+	public ResponseEntity<?> editar(@Valid @RequestBody Alumno alumno,BindingResult result,@PathVariable Long id){
+		
+		//validamos antes de guardar, retornamos llamada al método
+		if(result.hasErrors()) {
+			return this.validar(result);
+		}
 		
 		// Primero buscamos el objeto a modificar en la base de datos
 		Optional<Alumno> op= service.findById(id);

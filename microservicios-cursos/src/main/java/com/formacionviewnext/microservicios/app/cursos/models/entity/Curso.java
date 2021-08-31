@@ -16,6 +16,7 @@ import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotEmpty;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.commons.examenes.models.entity.Examen;
@@ -28,6 +29,7 @@ public class Curso {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotEmpty
 	private String nombre;
 
 	@Column(name = "create_at")
@@ -36,7 +38,7 @@ public class Curso {
 
 	@OneToMany(fetch = FetchType.LAZY)
 	private List<Alumno> alumnos;
-	
+
 	@ManyToMany(fetch = FetchType.LAZY)
 	private List<Examen> examenes;
 
