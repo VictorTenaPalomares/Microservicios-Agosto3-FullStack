@@ -1,13 +1,14 @@
 package com.formacionviewnext.microservicios.app.respuestas.models.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.commons.examenes.models.entity.Pregunta;
@@ -22,8 +23,12 @@ private Long id;
 
 private String texto;
 
-@ManyToOne(fetch = FetchType.LAZY) // muchas respuestas para un solo alumno
+//@ManyToOne(fetch = FetchType.LAZY) // muchas respuestas para un solo alumno
+@Transient
 private Alumno alumno;
+
+@Column(name="alumno_id")
+Long alumnoId;
 
 @OneToOne(fetch = FetchType.LAZY) // una respuesta para cada pregunta
 private Pregunta pregunta;
@@ -67,6 +72,18 @@ public Pregunta getPregunta() {
 public void setPregunta(Pregunta pregunta) {
 	this.pregunta = pregunta;
 }
+
+
+public Long getAlumnoId() {
+	return alumnoId;
+}
+
+
+public void setAlumnoId(Long alumnoId) {
+	this.alumnoId = alumnoId;
+}
+
+
 
 
 

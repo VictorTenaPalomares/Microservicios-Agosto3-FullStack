@@ -9,9 +9,12 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -20,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.app.cursos.models.entity.Curso;
+import com.formacionviewnext.microservicios.app.cursos.models.entity.CursoAlumno;
 import com.formacionviewnext.microservicios.app.cursos.services.CursoService;
 import com.formacionviewnext.microservicios.commons.controllers.CommonController;
 import com.formacionviewnext.microservicios.commons.examenes.models.entity.Examen;
@@ -30,7 +34,65 @@ public class CursoController extends CommonController<Curso, CursoService> {
 	@Value("${config.balanceador.test}")// para comunicarnos con la variable de entorno del properties
 	private String balanceadorTest;
 	
+	@DeleteMapping("/eliminar-alumno/{id}")
+	public  ResponseEntity<?> eliminarCursoAlumnmoPorId(@PathVariable Long id) {
+		service.eliminarCursoAlumnoPorId(id);
+		return ResponseEntity.noContent().build();
+	}
 	
+	@GetMapping // sin especificar la ruta se llama desde la raiz
+	@Override
+	public ResponseEntity<?> listar(){ // Retorna un genérico en la respuesta adáptandose al tipo dinámicamente
+		List<Curso>cursos=((List<Curso>) service.findAll()).stream()
+				.map(c->{
+					c.getCursoAlumnos()
+					.forEach(ca->{
+						Alumno alumno=new Alumno();
+						alumno.setId(ca.getAlumnoId());
+						c.addAlumno(alumno);
+					});
+					return c; 
+				}).collect(Collectors.toList());
+		 return ResponseEntity.ok().body(cursos);
+	}
+	
+	@GetMapping("/{id}") // Mientras se llamen igual los parámetros no hay que complicarse con atributos
+	@Override
+	public ResponseEntity<?> ver (@PathVariable Long id){
+		
+		 Optional<Curso> op= service.findById(id);
+		 if (op.isEmpty()) {
+			 // se retorna la construcción de una respuesta con contenido vacío
+			return ResponseEntity.notFound().build(); 
+		}
+		// retorna el objeto Alumno con el código de estado 200
+		 Curso curso=op.get();
+		 if (curso.getCursoAlumnos().isEmpty()==false) {
+			List<Long>ids=curso.getCursoAlumnos().stream().map(ca->{
+				return ca.getAlumnoId();
+			}).collect(Collectors.toList());
+			List<Alumno> alumnos=service.obtenerAlumnosPorCurso(ids);
+			curso.setAlumnos(alumnos);
+		}		 
+		 
+		return ResponseEntity.ok().body(curso);
+	}
+	
+	@GetMapping ("/pagina")
+	@Override
+	public ResponseEntity<?> listar(Pageable pageable){
+		 Page<Curso>cursos=service.findAll(pageable).map(c->{
+			 c.getCursoAlumnos()
+				.forEach(ca->{
+					Alumno alumno=new Alumno();
+					alumno.setId(ca.getAlumnoId());
+					c.addAlumno(alumno);
+				});
+				return c;
+		 });
+		 return ResponseEntity.ok().body(cursos);
+	}
+
 	@GetMapping("/balanceador-test")
 	public ResponseEntity<?> balanceadorTest() {
 	Map<String,Object>response=new HashMap<String, Object>();
@@ -77,7 +139,10 @@ public class CursoController extends CommonController<Curso, CursoService> {
 		// petición, por cada alumno, usamos el método custom addAlumno que se ha
 		// implementado en la clase POJO Curso.
 		alumnos.forEach(unAlumno -> {
-			dbCurso.addAlumno(unAlumno);
+			CursoAlumno cursoAlumno=new CursoAlumno();			
+			cursoAlumno.setAlumnoId(unAlumno.getId());
+			cursoAlumno.setCurso(dbCurso);
+			dbCurso.addCursoAlumnos(cursoAlumno);
 		});
 
 		// Guardamos y retornamos
@@ -96,9 +161,10 @@ public class CursoController extends CommonController<Curso, CursoService> {
 
 		// Obtener el curso db
 		Curso dbCurso = o.get();
-
+		CursoAlumno cursoAlumno=new CursoAlumno();
+		cursoAlumno.setAlumnoId(alumno.getId());
 		// Borramos el alumno del curso a través del custom method de la POJO Alumno
-		dbCurso.removeAlumno(alumno);
+		dbCurso.removeCursoAlumnos(cursoAlumno);
 
 		// Guardamos y retornamos
 		return ResponseEntity.status(HttpStatus.CREATED).body(service.save(dbCurso));
