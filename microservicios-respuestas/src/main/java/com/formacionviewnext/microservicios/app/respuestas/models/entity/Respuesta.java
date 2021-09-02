@@ -1,91 +1,76 @@
 package com.formacionviewnext.microservicios.app.respuestas.models.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.commons.examenes.models.entity.Pregunta;
 
-@Entity
-@Table(name="respuestas")
+@Document(collection = "respuestas")
 public class Respuesta {
-	
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long id;
 
-private String texto;
+	@Id
+	private String id;
 
-//@ManyToOne(fetch = FetchType.LAZY) // muchas respuestas para un solo alumno
-@Transient
-private Alumno alumno;
+	private String texto;
 
-@Column(name="alumno_id")
-Long alumnoId;
+	@Transient // para que no forme parte de la bdd, solo de la clase de java
+	private Alumno alumno;
 
-@OneToOne(fetch = FetchType.LAZY) // una respuesta para cada pregunta
-private Pregunta pregunta;
+	private Long alumnoId;
 
+	@Transient
+	private Pregunta pregunta;
 
-public Long getId() {
-	return id;
-}
+	private Long preguntaId;
 
+	public String getId() {
+		return id;
+	}
 
-public void setId(Long id) {
-	this.id = id;
-}
+	public void setId(String id) {
+		this.id = id;
+	}
 
+	public String getTexto() {
+		return texto;
+	}
 
-public String getTexto() {
-	return texto;
-}
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
 
+	public Alumno getAlumno() {
+		return alumno;
+	}
 
-public void setTexto(String texto) {
-	this.texto = texto;
-}
+	public void setAlumno(Alumno alumno) {
+		this.alumno = alumno;
+	}
 
+	public Pregunta getPregunta() {
+		return pregunta;
+	}
 
-public Alumno getAlumno() {
-	return alumno;
-}
+	public void setPregunta(Pregunta pregunta) {
+		this.pregunta = pregunta;
+	}
 
+	public Long getAlumnoId() {
+		return alumnoId;
+	}
 
-public void setAlumno(Alumno alumno) {
-	this.alumno = alumno;
-}
+	public void setAlumnoId(Long alumnoId) {
+		this.alumnoId = alumnoId;
+	}
 
+	public Long getPreguntaId() {
+		return preguntaId;
+	}
 
-public Pregunta getPregunta() {
-	return pregunta;
-}
-
-
-public void setPregunta(Pregunta pregunta) {
-	this.pregunta = pregunta;
-}
-
-
-public Long getAlumnoId() {
-	return alumnoId;
-}
-
-
-public void setAlumnoId(Long alumnoId) {
-	this.alumnoId = alumnoId;
-}
-
-
-
-
-
+	public void setPreguntaId(Long preguntaId) {
+		this.preguntaId = preguntaId;
+	}
 
 }

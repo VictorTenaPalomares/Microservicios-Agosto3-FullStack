@@ -179,18 +179,19 @@ public class CursoController extends CommonController<Curso, CursoService> {
 			//Almacenamos todos los Ids de los examenes 
 			List<Long>examenesId=(List<Long>) service.obtenerExamenesIdsConRespuestasAlumnos(id);
 			// Mapeamos a otra lista convirtiéndolos a true a través de Java 8 en los examens que si han sido respondidios
-			List<Examen>examenes=curso.getExamenes()
-					.stream()
-					.map(e->{//por cada elemento en el operador map se emite el examen
-						if(examenesId.contains(e.getId())){ //preguntamos si en todos los examenes que han venido
-							e.setRespondido(true);
-						}
-						return e;
-					}).collect(Collectors.toList());
-			
-			// Como un stream no cambia el estado de origen, tenemos que asignarlo posteriormente
-			curso.setExamenes(examenes);
-		
+			if (examenesId != null && examenesId.size() > 0) {
+				List<Examen> examenes = curso.getExamenes().stream().map(e -> {// por cada elemento en el operador map
+																				// se emite el examen
+					if (examenesId.contains(e.getId())) { // preguntamos si en todos los examenes que han venido
+						e.setRespondido(true);
+					}
+					return e;
+				}).collect(Collectors.toList());
+
+				// Como un stream no cambia el estado de origen, tenemos que asignarlo
+				// posteriormente
+				curso.setExamenes(examenes);
+			}
 		
 		}		
 		
