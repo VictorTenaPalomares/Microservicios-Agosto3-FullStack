@@ -7217,3 +7217,67 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2021-09-02 12:40:58,446 [Worker-115: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
 2021-09-02 12:40:59,610 [Worker-115: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
 2021-09-02 12:40:59,638 [Worker-115: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 12:41:00,919 [Worker-115: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 12:41:00,952 [Worker-115: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 12:46:00,785 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:46:00,785 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:46:00,786 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 12:46:00,793 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 12:46:00,794 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:46:00,794 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:46:00,794 [Worker-204: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 12:48:40,379 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:48:40,379 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:48:40,379 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 12:48:40,387 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 12:48:40,388 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:48:40,388 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:48:40,388 [Worker-213: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 12:49:58,213 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 12:49:58,220 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 12:49:58,794 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 12:49:58,810 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 12:49:59,637 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 12:49:59,654 [Worker-214: Launching microservicios-respuestas - MicroserviciosRespuestasApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 12:59:53,257 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:59:53,257 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:59:53,258 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 12:59:53,266 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 12:59:53,267 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 12:59:53,267 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 12:59:53,267 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 13:02:15,837 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:02:15,837 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:02:15,838 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 13:02:15,843 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 13:02:15,844 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:02:15,844 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:02:15,844 [Worker-210: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 13:02:26,982 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:02:26,982 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:02:26,983 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 13:02:26,988 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 13:02:26,990 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:02:26,990 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:02:26,990 [Worker-219: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 13:11:22,701 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:11:22,701 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:11:22,702 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 13:11:22,710 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 13:11:22,711 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:11:22,711 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:11:22,712 [Worker-224: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 13:11:53,867 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:11:53,867 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:11:53,868 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-09-02 13:11:53,872 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-09-02 13:11:53,873 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-09-02 13:11:53,873 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-09-02 13:11:53,873 [Worker-222: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\0018118\Desktop\Microservicios3_FullStack\microservicios-respuestas\src\test\resources
+2021-09-02 13:12:05,268 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 13:12:05,272 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 13:12:05,273 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-microservicios: com.formacionviewnext.microservicios.commons:commons-microservicios:0.0.1-SNAPSHOT with classifier null to /commons-microservicios/target/classes
+2021-09-02 13:12:05,857 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes
+2021-09-02 13:12:05,863 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-alumnos: com.formacionviewnext.microservicios.commons.alumnos:commons-alumnos:0.0.1-SNAPSHOT with classifier null to /commons-alumnos/target/classes
+2021-09-02 13:12:05,863 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-microservicios: com.formacionviewnext.microservicios.commons:commons-microservicios:0.0.1-SNAPSHOT with classifier null to /commons-microservicios/target/classes
+2021-09-02 13:12:06,578 [Worker-222: Launching microservicios-cursos - CommonsMicroserviciosCursosApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/commons-examenes: com.formacionviewnext.microservicios.commons.examenes:commons-examenes:0.0.1-SNAPSHOT with classifier null to /commons-examenes/target/classes

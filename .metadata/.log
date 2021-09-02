@@ -11538,3 +11538,435 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 12:40:35.436
 !MESSAGE executing callback sts4.classpath.YtElopqv SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.319
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.321
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.321
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.321
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.321
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.322
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.322
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.322
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.322
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.887
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.887
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.939
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:00.964
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:01.011
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:01.013
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:01.019
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:01.030
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:46:01.039
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.727
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.730
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.732
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.747
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.748
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.748
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.749
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.749
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.750
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.762
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.762
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.763
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.799
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.799
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.807
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.810
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.814
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:08.837
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.161
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.162
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.162
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.162
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.163
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.163
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.164
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.164
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.164
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.671
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.673
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.674
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.739
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.745
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.751
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.751
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.751
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:48:40.766
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.089
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.090
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.090
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.091
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.091
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.091
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.092
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.092
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.092
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.601
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.603
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.649
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.678
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.679
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.691
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.695
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.707
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 12:59:53.711
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.678
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.678
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.679
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.679
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.679
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.680
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.680
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.680
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:15.681
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.245
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.246
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.246
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.299
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.302
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.303
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.306
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.328
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:16.331
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.724
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.725
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.725
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.725
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.726
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.726
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.726
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.726
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:26.727
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.351
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.353
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.353
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.463
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.468
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.469
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.480
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.489
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:02:27.504
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.427
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.428
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.428
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.428
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.429
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.429
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.430
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.430
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:22.430
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.059
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.060
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.061
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.156
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.158
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.165
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.172
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.238
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:23.244
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.606
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.606
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.607
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.607
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.607
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.608
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.608
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.608
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:53.609
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.227
+!MESSAGE Has main method computation for project 'commons-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.228
+!MESSAGE Has main method computation for project 'commons-microservicios'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.229
+!MESSAGE Has main method computation for project 'commons-alumnos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.283
+!MESSAGE Has main method computation for project 'microservicios-eureka'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.284
+!MESSAGE Has main method computation for project 'microservicios-examenes'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.287
+!MESSAGE Has main method computation for project 'microservicios-cursos'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.295
+!MESSAGE Has main method computation for project 'microservicios-respuestas'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.296
+!MESSAGE Has main method computation for project 'microservicios-zuul'
+
+!ENTRY Activator 1 0 2021-09-02 13:11:54.300
+!MESSAGE Has main method computation for project 'microservicios-usuarios_Postgres'

@@ -1,7 +1,6 @@
 package com.formacionviewnext.microservicios.app.respuestas.models.entity;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
@@ -15,12 +14,12 @@ public class Respuesta {
 
 	private String texto;
 
-	@Transient // para que no forme parte de la bdd, solo de la clase de java
+	//@Transient // para que no forme parte de la bdd, solo de la clase de java
 	private Alumno alumno;
 
 	private Long alumnoId;
 
-	@Transient
+	//@Transient
 	private Pregunta pregunta;
 
 	private Long preguntaId;
