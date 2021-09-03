@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html', // vista
   styleUrls: ['./app.component.css'] // es un array por lo que puede haber 1 o muchos más estilos
 })
-export class AppComponent {
+export class AppComponent { // Esta clase de TypeScript sirve para que este componente se pureda registrar en otros de la aplicación app.module.ts
   title = 'cursos';
 }
