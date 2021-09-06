@@ -16,4 +16,6 @@ public interface AlumnoService extends CommonService<Alumno>{
 	public void eliminarCursoAlumnoPorId(Long id);
 	
 	
+	
+	
 }

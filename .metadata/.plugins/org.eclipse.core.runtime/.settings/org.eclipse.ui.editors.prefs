@@ -38,6 +38,6 @@ searchResultIndication=true
 searchResultIndicationColor=94,94,94
 searchResultTextStyle=BOX
 secondaryIPColor=90,90,90
-spellingEnabled=true
+spellingEnabled=false
 spellingIndicationColor=253,170,211
 writeOccurrenceIndicationColor=27,98,145
