@@ -14,6 +14,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,7 +28,7 @@ import com.formacionviewnext.microservicios.app.cursos.models.entity.CursoAlumno
 import com.formacionviewnext.microservicios.app.cursos.services.CursoService;
 import com.formacionviewnext.microservicios.commons.controllers.CommonController;
 import com.formacionviewnext.microservicios.commons.examenes.models.entity.Examen;
-
+//@CrossOrigin({"*"})// para todos los origenes
 @RestController
 public class CursoController extends CommonController<Curso, CursoService> {
 

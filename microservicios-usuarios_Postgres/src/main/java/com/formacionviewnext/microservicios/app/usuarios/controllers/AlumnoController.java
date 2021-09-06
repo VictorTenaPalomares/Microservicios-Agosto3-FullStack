@@ -12,6 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,7 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.formacionviewnext.microservicios.app.commons.alumnos.models.entity.Alumno;
 import com.formacionviewnext.microservicios.app.usuarios.services.AlumnoService;
 import com.formacionviewnext.microservicios.commons.controllers.CommonController;
-
+//@CrossOrigin({"*"})// para todos los origenes
 @RestController
 public class AlumnoController extends CommonController<Alumno, AlumnoService> {
 
