@@ -1,4 +1,6 @@
-export class Alumno {
+import { Generic } from "./generic";
+
+export class Alumno implements Generic {
     id          : number; // por defecto el modificador de acceso en angular es public
     nombre      : string;
     apellido    : string;

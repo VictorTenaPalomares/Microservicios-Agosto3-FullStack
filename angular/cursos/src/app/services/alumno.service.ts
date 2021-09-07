@@ -1,44 +1,39 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { BASE_ENDPOINT } from '../config/app';
 import { Alumno } from '../models/alumno';
+import { CommonService } from './common.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AlumnoService {
+export class AlumnoService extends CommonService<Alumno>{
 
-  private baseEnpoint = 'http://localhost:8090/api/alumnos';
-  private cabeceras: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' });
-  // la inyeccion se efectua mediante constructor luego lo usamos en cada uno de los métodos 
-  constructor(private http: HttpClient) { }
+  protected baseEnpoint = BASE_ENDPOINT + '/alumnos';
 
-  public listar(): Observable<Alumno[]> {
-    return this.http.get<Alumno[]>(this.baseEnpoint);
+  constructor(protected http: HttpClient) {
+    super(http);
   }
 
-  public listarPaginas(page: string, size: string): Observable<any> { // devuelve un tipo genérico
-    const params = new HttpParams() // buena práctica http params siempre como constante
-      .set('page', page)// se invoca en base a la misma instancia de forma encadenada para evitar crear una instancia nueva cada vez. por que httpParam es inmutable
-      .set('size', size);
-    return this.http.get<any>(`${this.baseEnpoint}/pagina`, { params: params });
+  public crearConFoto(alumno: Alumno, archivo: File): Observable<Alumno> {
+    const formData = new FormData();
+    formData.append('archivo', archivo);
+    formData.append('nombre', alumno.nombre);
+    formData.append('apellido', alumno.apellido);
+    formData.append('email', alumno.email);
+    return this.http.post<Alumno>(this.baseEnpoint + '/crear-con-foto',
+      formData);
   }
 
-  public ver(id: number): Observable<Alumno> {
-    //return this.http.get<Alumno>( this.baseEnpoint + '/id' ); // forma más cercana a Java
-    return this.http.get<Alumno>(`${this.baseEnpoint}/${id}`); // con template strings
+  public editarConFoto(alumno: Alumno, archivo: File): Observable<Alumno> {
+    const formData = new FormData();
+    formData.append('archivo', archivo);
+    formData.append('nombre', alumno.nombre);
+    formData.append('apellido', alumno.apellido);
+    formData.append('email', alumno.email);
+    return this.http.put<Alumno>(`${this.baseEnpoint}/editar-con-foto/${alumno.id}`,
+      formData);
   }
 
-  public crear(alumno: Alumno): Observable<Alumno> { // recibe un objeto de tipo alumno y retorna Un observable (flujo reactivo) de tipo Alumno
-    return this.http.post<Alumno>(this.baseEnpoint, alumno, { headers: this.cabeceras });
-  }
-
-  public editar(alumno: Alumno): Observable<Alumno> {
-    return this.http.put<Alumno>(`${this.baseEnpoint}/${alumno.id}`, alumno,
-      { headers: this.cabeceras });
-  }
-
-  public eliminar(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.baseEnpoint}/${id}`);
-  }
 }

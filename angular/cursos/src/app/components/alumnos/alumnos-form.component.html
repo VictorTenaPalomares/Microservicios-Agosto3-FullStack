@@ -6,7 +6,7 @@
         <form>
             <div class="form-group">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" [(ngModel)]="alumno.nombre">
+                <input type="text" name="nombre" class="form-control" id="nombre" [(ngModel)]="model.nombre">
                 <!--Mapeo de campo de formulario hacia atributo de la clase alumno a través de la directiva ng-model del modulo formsModule-->
                 <div class="alert alert-danger" *ngIf="error?.nombre">
                     {{error.nombre}}
@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" class="form-control" id="apellido" [(ngModel)]="alumno.apellido">
+                <input type="text" name="apellido" class="form-control" id="apellido" [(ngModel)]="model.apellido">
                 <div class="alert alert-danger" *ngIf="error?.apellido">
                     {{error.apellido}}
                 </div>
@@ -22,15 +22,21 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" name="email" class="form-control" id="email" [(ngModel)]="alumno.email">
+                <input type="text" name="email" class="form-control" id="email" [(ngModel)]="model.email">
                 <div class="alert alert-danger" *ngIf="error?.email">
                     {{error.email}}
                 </div>
             </div>
             <div class="form-group">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Seleccionar foto</label>
+                    <input (change)="seleccionarFoto($event)" class="form-control" type="file" id="formFile">
+                  </div>
+            </div>
+            <div class="form-group">
                 <button type="button" class="btn btn-primary my-2" 
-                (click)="alumno.id?editar():crear()">
-                    {{alumno.id?'Editar': 'Crear' }}
+                (click)="model.id?editar():crear()">
+                    {{model.id?'Editar': 'Crear' }}
                 </button>
             </div>
         </form>
