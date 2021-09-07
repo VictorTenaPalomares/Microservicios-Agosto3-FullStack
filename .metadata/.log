@@ -18406,3 +18406,36 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2021-09-07 07:25:35.744
 !MESSAGE Setup tasks were performed during startup updating 5 preferences.See 'C:\Users\0018118\eclipse\jee-2021-06\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.jface 2 0 2021-09-07 11:57:47.384
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-07 11:57:47.384
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68be065e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32813d78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-07 11:57:49.760
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GZJXUOcc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-07 11:57:49.802
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.GZJXUOcc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-07 11:57:49.816
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-07 11:57:49.818
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.GZJXUOcc => OK

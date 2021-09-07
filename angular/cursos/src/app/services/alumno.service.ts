@@ -12,7 +12,7 @@ export class AlumnoService extends CommonService<Alumno>{
 
   protected baseEnpoint = BASE_ENDPOINT + '/alumnos';
 
-  constructor(protected http: HttpClient) {
+  constructor( http: HttpClient) {
     super(http);
   }
 
