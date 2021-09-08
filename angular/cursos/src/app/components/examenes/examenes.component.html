@@ -1,1 +1,49 @@
-<p>examenes works!</p>
+<div class="card bg-light mb-3">
+    <div class="card-header">{{titulo}}</div>
+    <div class="card-body">
+
+        <button class="btn btn-primary my-2" routerLink="/examenes/form">crear</button>
+        <div class="alert alert-info" *ngIf="lista?.length==0">
+            No hay exámenes en el sistema.
+        </div>
+        <table class="table table-hover table-striped" *ngIf="lista?.length>0">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>asignaturas</th>
+                    <th>preguntas</th>
+                    <th>creado en</th>
+                    <th>editar</th>
+                    <th>elimiar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let examen of lista">
+                    <td>{{examen.id}}</td>
+                    <td>{{examen.name }}</td>
+                    <td>{{examen.asignaturaPadre?.nombre}} -> {{examen.asignaturaHija?.nombre}}</td>
+                    <td>{{examen.preguntas.length}}</td>
+                    <td>{{examen.createAt | date: 'dd/MM/yyyy/ hh:mm:ss'}}</td>
+                    <td><button class="btn btn-secondary btn-sm" [routerLink]="['/examenes/form',examen.id]">
+                            editar
+                        </button>
+                    </td>
+                    <!--routerLink con corchetes porque estamos pasando una variable con el id, por lo tanto se convierte en un array del que el primer parámetro es la ruta y el segundo la variable con el id-->
+                    <td><button class="btn btn-danger btn-sm" (click)="eliminar(examen)">
+                            eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <mat-paginator [length]="totalRegistros" [pageSize]="totalPorPagina" [pageIndex]="paginaActual"
+            [pageSizeOptions]="pageSizeOptions" (page)="paginar($event)" showFirstLastButtons class="float-left mx-2">
+            <!--Fragmento de código que procede de la libreria material.angular.io-->
+        </mat-paginator>
+    </div>
+</div>
+
+
+
+<!--variable que está definida en la clase typescript de este componente-->

@@ -21,7 +21,10 @@ export abstract class CommonFormComponent<E extends Generic,S extends CommonServ
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       const id: number = +params.get('id'); // declaramos  constante de tipo number y la igualamos a el get del parámetro que se emite en la funcion de flecha
-      if (id) this.service.ver(id).subscribe(al => this.model = al)
+      if (id) this.service.ver(id).subscribe(m => {
+        this.model = m;
+        this.titulo='Editar ' + this.nombreModel;
+      });
     });
   }
   

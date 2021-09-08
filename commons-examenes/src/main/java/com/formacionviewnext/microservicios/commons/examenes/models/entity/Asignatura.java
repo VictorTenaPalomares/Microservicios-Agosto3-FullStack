@@ -16,27 +16,27 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name="asignaturas")
+@Table(name = "asignaturas")
 public class Asignatura {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY) //Autoincremental
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincremental
 	private Long id;
-	
+
 	private String nombre;
-	
-	@JsonIgnoreProperties(value= {"hijos"})
-	@ManyToOne(fetch=FetchType.LAZY) // Muchas asignaturas hijas asociadas a un padre
+
+	@JsonIgnoreProperties(value = { "hijos", "handler", "hibernateLazyInitializer" })
+	@ManyToOne(fetch = FetchType.LAZY) // Muchas asignaturas hijas asociadas a un padre
 	private Asignatura padre;
-	
-	@JsonIgnoreProperties(value= {"padre"},allowSetters=true)
-	@OneToMany(fetch=FetchType.LAZY, mappedBy="padre",cascade=CascadeType.ALL ) // Una asignatura tiene muchos hijos
-	List <Asignatura> hijos;
-		
+
+	@JsonIgnoreProperties(value = { "padre", "handler", "hibernateLazyInitializer" }, allowSetters = true)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "padre", cascade = CascadeType.ALL) // Una asignatura tiene muchos
+																						// hijos
+	List<Asignatura> hijos;
 
 	public Asignatura() {
-		
-		this.hijos=new ArrayList<>();
+
+		this.hijos = new ArrayList<>();
 	}
 
 	public Long getId() {
@@ -70,9 +70,5 @@ public class Asignatura {
 	public void setHijos(List<Asignatura> hijos) {
 		this.hijos = hijos;
 	}
-	
-	
-	
-	
-	
+
 }
