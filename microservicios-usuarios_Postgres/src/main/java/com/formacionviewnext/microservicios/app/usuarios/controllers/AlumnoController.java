@@ -122,8 +122,7 @@ public class AlumnoController extends CommonController<Alumno, AlumnoService> {
 	}
 	
 	@GetMapping("/filtrar/{term}")
-	public ResponseEntity<?> filtrar(@PathVariable String term){
-	
+	public ResponseEntity<?> filtrar(@PathVariable String term){	
 		// Recorder que el service es protected y lo estamos heredando
 		return ResponseEntity.ok(service.findByNombreOrApellido(term));	
 	}

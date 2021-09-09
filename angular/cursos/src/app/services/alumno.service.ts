@@ -12,7 +12,7 @@ export class AlumnoService extends CommonService<Alumno>{
 
   protected baseEnpoint = BASE_ENDPOINT + '/alumnos';
 
-  constructor( http: HttpClient) {
+  constructor(http: HttpClient) {
     super(http);
   }
 
@@ -35,5 +35,11 @@ export class AlumnoService extends CommonService<Alumno>{
     return this.http.put<Alumno>(`${this.baseEnpoint}/editar-con-foto/${alumno.id}`,
       formData);
   }
+
+  //método que trae la información del backend del método filtrar en microservicio-usuarios
+  public filtrarPorNombre(nombre:string):Observable<Alumno[]>{
+    return this.http.get<Alumno[]>(`${this.baseEnpoint}/filtrar/${nombre}`); // el endpoint al que vamos a buscar la información
+  }
+
 
 }
