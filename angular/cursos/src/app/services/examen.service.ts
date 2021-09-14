@@ -11,14 +11,20 @@ import { CommonService } from './common.service';
 })
 export class ExamenService extends CommonService<Examen>{
 
-  protected baseEnpoint = BASE_ENDPOINT+'/examenes';
+  protected baseEnpoint = BASE_ENDPOINT + '/examenes';
 
-  constructor( http: HttpClient) {
+  constructor(http: HttpClient) {
     super(http);
-   }
+  }
 
 
-   public findAllAsignatura():Observable<Asignatura[]>{
-     return this.http.get<Asignatura[]>(this.baseEnpoint+'/asignaturas');
-   }
+  public findAllAsignatura(): Observable<Asignatura[]> {
+    return this.http.get<Asignatura[]>(this.baseEnpoint + '/asignaturas');
+  }
+
+
+  //Método que se comunica con el que ofrece la posibilidad de filtrar por id desde el backend
+  public filtrarPorNombre(name: string): Observable<Examen[]> {
+    return this.http.get<Examen[]>(`${this.baseEnpoint}/filtrar/${name}`);
+  }
 }
